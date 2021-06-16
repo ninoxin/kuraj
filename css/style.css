@@ -560,6 +560,10 @@ body {
   color: #FFFFFF;
 }
 
+.filter__button-media {
+  display: none;
+}
+
 .filter__numb {
   max-width: 131px;
   width: 100%;
