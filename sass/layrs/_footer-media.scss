@@ -1,0 +1,70 @@
+
+.pesontedan {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #000000;
+    overflow: hidden;
+  }
+  .pesontedan input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .pesontedan label {
+    position: relative;
+    display: block;
+    background: unset;
+    line-height: 3;
+    cursor: pointer;
+    font-size: 17px;
+    border-bottom: 1px solid  rgba(23, 51, 94, 0.2);
+  }
+  
+  .pesontedan-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background: unset;
+    transition: max-height .40s;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .pesontedan-content {
+    background: unset;
+  }
+  .pesontedan-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  .pesontedan input:checked ~ .pesontedan-content {
+    max-height: 100vh;
+  }
+  
+  /* Icon */
+  .pesontedan label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+  }
+  .pesontedan input[type=checkbox] + label::after {
+    content: "+";
+    color: $primary
+  }
+  .pesontedan input[type=checkbox]:checked + label::after {
+    content: "-";
+  }
+  
+.navigaonusing{
+    display: none;
+}

@@ -1,0 +1,164 @@
+.restoran
+    &-bg
+        width: 100%
+        min-height: 200px
+        overflow: hidden
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            left: 0
+            top: 160px
+            width: 100%
+            height: 100%
+            background: url(../img/mes/bg.png) no-repeat top / cover
+    &__block
+        flex-direction: column
+        justify-content: center
+    &__link
+        margin-top: -169px
+        z-index: 2
+    &__cards
+        display: flex
+        width: 100%
+        justify-content: space-between
+        margin-top: 155px
+    &__card
+        max-width: 361px
+        width: 100%
+        box-shadow: 0px 38px 80px rgba(23, 51, 94, 0.06), 0px 15.8755px 33.4221px rgba(23, 51, 94, 0.0215656), 0px 8.4878px 17.869px rgba(23, 51, 94, 0.0178832), 0px 4.75819px 10.0172px rgba(23, 51, 94, 0.015), 0px 2.52704px 5.32008px rgba(23, 51, 94, 0.0121168), 0px 1.05156px 2.21381px rgba(23, 51, 94, 0.00843437)
+        border-radius: 15px
+        &__img
+            padding-top: 8px
+            padding-bottom: 10px
+            &:first-of-type
+                padding-left: 60px
+    &__group
+        display: flex
+        align-items: flex-end
+        padding-top: 20px
+        padding-left: 25px
+    &__label
+        font-size: 22px
+        line-height: 100%
+        color: $thierd
+        padding-left: 20px
+    &__text
+        color: $bg-d
+        padding-left: 60px
+        padding-top: 14px
+        font-size: 16px
+        line-height: 130%
+    &__radio[type="radio"]:checked:before
+        content: ''
+        display: block
+        position: relative
+        top: 5px
+        left: 5px
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background: $primary
+    &__radio[type="radio"]
+        width: 25px
+        height: 25px
+        border-radius: 50%
+        background: unset
+#myBtnContainer
+    max-width: 1000px
+    width: 100%
+    padding-top: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+.btn 
+    border: none
+    outline: none
+    padding: 20px
+    background-color: unset
+    cursor: pointer
+    font-size: 22px
+    line-height: 100%
+    text-align: center
+    letter-spacing: -0.05em
+    color: $bg-d
+    &:focus
+        padding: 18px
+        border-bottom: 2px solid $primary
+        color: $primary
+.active
+    padding: 18px
+    border-bottom: 2px solid $primary
+    color: $primary
+.filter
+    box-shadow: 0px 38px 80px rgba(23, 51, 94, 0.05), 0px 15.8755px 33.4221px rgba(23, 51, 94, 0.0215656), 0px 8.4878px 17.869px rgba(23, 51, 94, 0.0178832), 0px 4.75819px 10.0172px rgba(23, 51, 94, 0.015), 0px 2.52704px 5.32008px rgba(23, 51, 94, 0.0121168), 0px 1.05156px 2.21381px rgba(23, 51, 94, 0.00843437)
+    border-radius: 15px
+    max-width: 340px
+    margin-bottom: 37px
+    display: none
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        flex-wrap: wrap
+        margin-top: 100px
+        margin-bottom: 100px
+    &__title
+        color: $thierd
+        font-size: 22px
+        line-height: 100%
+        letter-spacing: -0.05em
+    &__link
+        padding-top: 6px
+        padding-bottom: 21px
+        color: $bg-d
+        font-size: 16px
+        line-height: 130%
+        letter-spacing: -0.05em
+        text-decoration-line: underline
+        transition: .2s all
+        &:hover
+            color: $primary
+    &__button
+        max-width: 310px
+        width: 100%
+        height: 56px
+        margin-bottom: 19px
+        &:hover
+            border-color: $primary
+            background: $primary
+            color: $light
+    &__numb
+        max-width: 131px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 22px
+        &-button
+            outline: none
+            border: none
+            border-radius: 50%
+            width: 35px
+            height: 35px
+            color: $thierd
+            font-size: 26px
+            background: unset
+            box-shadow: 0px 38px 80px rgba(23, 51, 94, 0.05), 0px 15.8755px 33.4221px rgba(23, 51, 94, 0.0215656), 0px 8.4878px 17.869px rgba(23, 51, 94, 0.0178832), 0px 4.75819px 10.0172px rgba(23, 51, 94, 0.015), 0px 2.52704px 5.32008px rgba(23, 51, 94, 0.0121168), 0px 1.05156px 2.21381px rgba(23, 51, 94, 0.00843437)
+            &:focus
+                color: $primary
+            &-media
+                display: none
+#buttonCountNumber
+    color: $primary
+    font-size: 16px
+    line-height: 100%
+    letter-spacing: -0.05em
+.show
+    display: block

@@ -1,0 +1,71 @@
+.promo
+    &__block
+        flex-direction: column
+        margin-bottom: 340px
+    &__card
+        display: flex
+        margin: auto
+        box-shadow: 0px 46px 80px rgba(139, 153, 175, 0.06), 0px 46px 80px rgba(139, 153, 175, 0.07), 0px 19.2177px 33.4221px rgba(139, 153, 175, 0.0503198), 0px 10.2747px 17.869px rgba(139, 153, 175, 0.0417275), 0px 5.75991px 10.0172px rgba(139, 153, 175, 0.035), 0px 3.05905px 5.32008px rgba(139, 153, 175, 0.0282725), 0px 1.27294px 2.21381px rgba(139, 153, 175, 0.0196802)
+        border-radius: 25px
+        margin-bottom: 100px
+    &__box
+        padding-left: 41px
+        padding-top: 33px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            top: 15px
+            left: 20px
+            display: block
+            width: 100%
+            height: 90%
+            border: 1px dashed $secondary
+            border-radius: 15px
+            z-index: -1
+    &__img
+        border-radius: 0px 25px 25px 0px
+    &__title
+        display: flex
+        justify-content: space-between
+        padding-top: 11px
+    &__price
+        padding-right: 38px
+    &__link
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            bottom: -10px
+            display: block
+            height: 2px
+            width: 50%
+            background: $primary
+    &__text
+        max-width: 630px
+        width: 100%
+        padding-top: 30px
+        color: $bg-d
+        font-size: 16px
+        line-height: 150%
+    &__desc
+        display: flex
+        justify-content: space-between
+        padding-top: 31px
+        &-text 
+            font-size: 14px
+            line-height: 150%
+            padding-left: 25px
+            &:nth-child(1)
+                background: url(../img/promo/clock.svg) no-repeat left / 20px
+                margin-bottom: 5px
+            &:nth-child(2)
+                background: url(../img/promo/pig.svg) no-repeat left / 20px
+    &__button
+        max-width: 300px
+        width: 100%
+        height: 50px
+        &:hover
+            background: $primary
+            border-color: $primary
+            color: $light

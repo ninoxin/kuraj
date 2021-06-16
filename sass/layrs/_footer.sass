@@ -1,0 +1,70 @@
+.footer
+    &__block
+        margin-top: 290px
+        margin-bottom: 64px
+        border-top: 1px solid $bg
+        padding-top: 48px
+        justify-content: space-between
+        align-items: baseline
+    &__nav
+        display: flex
+        flex-direction: column
+        &-link
+            text-decoration: none
+            font-size: 18px
+            line-height: 100%
+            color: $bg-d
+            padding-bottom: 32px
+            transition: .2s all
+            &:hover
+                color: $thierd
+    &__title
+        color: $gr
+        font-weight: 800
+        font-size: 18px
+        line-height: 100%
+        padding-bottom: 32px
+    &__contact
+        max-width: 231px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-link
+            border-radius: 50%
+            width: 43px
+            height: 43px
+            transition: .2s all
+            &:nth-child(1)
+                background: $thierd url(../img/facebook.svg) no-repeat center  / 26px
+                &:hover
+                    background: $primary url(../img/facebook.svg) no-repeat center  / 26px
+            &:nth-child(2)
+                background: $thierd url(../img/vk.svg) no-repeat center / 22px
+                &:hover
+                    background: $primary url(../img/vk.svg) no-repeat center / 22px
+            &:nth-child(3)
+                background: $thierd url(../img/instagram.svg) no-repeat center / 19px
+                &:hover
+                    background: $primary url(../img/instagram.svg) no-repeat center / 19px
+            &:nth-child(4)
+                background: $thierd url(../img/twitter.svg) no-repeat center / 19px
+                &:hover
+                    background: $primary url(../img/twitter.svg) no-repeat center / 19px
+    &__info
+        box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.02), 0px 1.6711px 33.4221px rgba(0, 0, 0, 0.0143771), 0px 0.893452px 17.869px rgba(0, 0, 0, 0.0119221), 0px 0.500862px 10.0172px rgba(0, 0, 0, 0.01), 0px 0.266004px 5.32008px rgba(0, 0, 0, 0.00807786), 0px 0.11069px 2.21381px rgba(0, 0, 0, 0.00562291)
+        min-height: 133px
+        display: flex
+        align-items: center
+        &-desc
+            max-width: 568px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            &-link
+                text-decoration: none
+                color: $thierd
+                font-size: 18px
+                line-height: 100%
+            &-text
+                opacity: .5
